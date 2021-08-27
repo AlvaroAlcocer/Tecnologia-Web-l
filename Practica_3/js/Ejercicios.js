@@ -12,6 +12,34 @@ function Mul()
 };
 
  // Ejercio 2
+
+ function Gra()
+ {
+     var a=parseFloat(document.getElementById('num1').value);
+     var res1;
+
+     if (a==-10 || a<=15)
+     {
+         res1='Frio'
+     }
+     else{
+         if(a==16 || a<=25)
+         {
+             res1='Templado'
+         }
+         else
+         if(a==26 || a<=40)
+         {
+             res1='Calor'
+         }
+         else
+         {
+             res1='Muy caliente!!'
+         }
+     }   
+     document.getElementById('res').value=res1;
+ }
+
  // Ejercio 3
 
  function Fac()
